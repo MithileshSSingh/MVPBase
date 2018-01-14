@@ -103,7 +103,7 @@ public class RemoteDataSource implements DataSource {
              * For debugging network call via Stetho
              */
 //            if (BuildConfig.DEBUG) {
-            client.networkInterceptors().add(new com.facebook.stetho.okhttp.StethoInterceptor());
+//            client.networkInterceptors().add(new com.facebook.stetho.okhttp.StethoInterceptor());
 //            }
 
             retrofit = new Retrofit.Builder()
