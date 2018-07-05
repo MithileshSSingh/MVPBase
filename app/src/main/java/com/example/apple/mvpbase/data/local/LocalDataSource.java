@@ -5,9 +5,6 @@ import android.content.Context;
 import com.example.apple.mvpbase.data.DataSource;
 import com.example.apple.mvpbase.mvp.model.User;
 
-/**
- * Created by mithilesh on 9/23/16.
- */
 public class LocalDataSource implements DataSource {
     private static LocalDataSource ourInstance = new LocalDataSource();
 

@@ -1,8 +1,5 @@
 package com.example.apple.mvpbase.utils;
 
-/**
- * Created by apple on 30/10/17.
- */
 
 public class AppConstants {
 

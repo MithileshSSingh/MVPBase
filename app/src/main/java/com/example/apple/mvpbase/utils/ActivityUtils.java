@@ -10,9 +10,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 
-/**
- * Created by mithilesh on 8/25/16.
- */
 public class ActivityUtils {
     public static final String TAG = ActivityUtils.class.getSimpleName();
 

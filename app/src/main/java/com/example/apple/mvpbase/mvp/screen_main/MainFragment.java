@@ -10,9 +10,6 @@ import com.example.apple.mvpbase.R;
 import com.example.apple.mvpbase.mvp.BaseFragment;
 import com.example.apple.mvpbase.mvp.model.User;
 
-/**
- * Created by apple on 30/10/17.
- */
 
 public class MainFragment extends BaseFragment implements MainContract.View {
 

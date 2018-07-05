@@ -12,9 +12,6 @@ import com.example.apple.mvpbase.mvp.screen_main.MainFragment;
 import com.example.apple.mvpbase.utils.ActivityUtils;
 import com.example.apple.mvpbase.utils.AppConstants;
 
-/**
- * Created by mithilesh on 8/14/16.
- */
 public abstract class BaseActivity extends AppCompatActivity {
 
     public static String TAG = "TAG";

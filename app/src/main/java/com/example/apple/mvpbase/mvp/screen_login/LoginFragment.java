@@ -11,9 +11,6 @@ import com.example.apple.mvpbase.di.RepositoryInjector;
 import com.example.apple.mvpbase.mvp.BaseFragment;
 import com.example.apple.mvpbase.mvp.model.User;
 
-/**
- * Created by apple on 30/10/17.
- */
 
 public class LoginFragment extends BaseFragment implements LoginContract.View {
 

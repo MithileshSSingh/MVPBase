@@ -3,9 +3,6 @@ package com.example.apple.mvpbase.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * Created by mithilesh on 8/25/16.
- */
 public class AppPref {
 
     private static final String preferanceName = "NPVISIT_CUSTOMER";

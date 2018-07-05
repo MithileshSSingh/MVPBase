@@ -4,9 +4,6 @@ import com.example.apple.mvpbase.data.DataSource;
 import com.example.apple.mvpbase.data.Repository;
 import com.example.apple.mvpbase.mvp.model.User;
 
-/**
- * Created by apple on 30/10/17.
- */
 
 public class DemoPresenter implements DemoContract.Presenter {
 

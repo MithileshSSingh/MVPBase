@@ -4,9 +4,6 @@ import com.example.apple.mvpbase.mvp.BasePresenter;
 import com.example.apple.mvpbase.mvp.BaseView;
 import com.example.apple.mvpbase.mvp.model.User;
 
-/**
- * Created by apple on 30/10/17.
- */
 
 public class DemoContract {
 

@@ -10,9 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-/**
- * Created by mithilesh on 8/17/16.
- */
 public abstract class BaseFragment extends Fragment {
 
     public View mView;

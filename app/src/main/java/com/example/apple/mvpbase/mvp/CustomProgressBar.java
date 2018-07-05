@@ -4,9 +4,6 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.util.Log;
 
-/**
- * Created by mithilesh on 9/6/16.
- */
 public class CustomProgressBar {
     private static String TAG = CustomProgressBar.class.getSimpleName();
 

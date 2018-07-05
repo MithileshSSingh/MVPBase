@@ -9,9 +9,6 @@ import com.example.apple.mvpbase.R;
 import com.example.apple.mvpbase.mvp.BaseActivity;
 import com.example.apple.mvpbase.utils.AppConstants;
 
-/**
- * Created by apple on 30/10/17.
- */
 
 public class LoginActivity extends BaseActivity {
     private Toolbar toolbar;
