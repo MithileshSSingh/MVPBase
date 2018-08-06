@@ -9,9 +9,6 @@ import com.example.apple.mvpbase.data.remote.RemoteDataSource;
 public class RepositoryInjector {
 
     public static Repository provideRepository(Context context) {
-        return Repository.getInstance(
-                LocalDataSource.getInstance(context),
-                RemoteDataSource.getInstance(context)
-        );
+        return Repository.getInstance(LocalDataSource.getInstance(context), RemoteDataSource.getInstance(context));
     }
 }

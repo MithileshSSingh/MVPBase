@@ -9,16 +9,9 @@ public class DemoContract {
 
     interface View extends BaseView<Presenter> {
 
-        void loginSuccess(User user);
-
-        void loginFailed(int errorCode, String errorMessage);
-
     }
 
     interface Presenter extends BasePresenter {
-        void login(
-                String email,
-                String password);
 
     }
 }

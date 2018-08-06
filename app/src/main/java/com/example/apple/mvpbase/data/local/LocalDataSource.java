@@ -3,24 +3,26 @@ package com.example.apple.mvpbase.data.local;
 import android.content.Context;
 
 import com.example.apple.mvpbase.data.DataSource;
-import com.example.apple.mvpbase.mvp.model.User;
 
 public class LocalDataSource implements DataSource {
-    private static LocalDataSource ourInstance = new LocalDataSource();
 
-    public static LocalDataSource getInstance(Context context) {
-        return ourInstance;
-    }
+    private static LocalDataSource INSTANCE = null;
+
+    private Context mContext;
 
     private LocalDataSource() {
+
     }
 
-    @Override
-    public void login(
-            String email,
-            String password,
-            LoginCallBack callBack) {
+    private LocalDataSource(Context context) {
+        mContext = context;
+    }
 
-        callBack.success(new User());
+    public static LocalDataSource getInstance(Context context) {
+        if (INSTANCE == null) {
+            INSTANCE = new LocalDataSource(context);
+        }
+
+        return INSTANCE;
     }
 }

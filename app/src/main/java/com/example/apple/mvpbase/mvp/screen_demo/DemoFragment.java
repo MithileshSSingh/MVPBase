@@ -29,7 +29,7 @@ public class DemoFragment extends BaseFragment implements DemoContract.View {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.login, container, false);
+        mView = inflater.inflate(R.layout.activity_base_layout, container, false);
         setHasOptionsMenu(true);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
@@ -68,10 +68,7 @@ public class DemoFragment extends BaseFragment implements DemoContract.View {
 
     @Override
     protected void initData() {
-        mPresenter.login(
-                "",
-                ""
-        );
+
     }
 
     @Override
@@ -79,18 +76,4 @@ public class DemoFragment extends BaseFragment implements DemoContract.View {
         mPresenter = presenter;
     }
 
-    @Override
-    public void showLoading(String title, String message) {
-
-    }
-
-    @Override
-    public void loginSuccess(User user) {
-
-    }
-
-    @Override
-    public void loginFailed(int errorCode, String errorMessage) {
-
-    }
 }

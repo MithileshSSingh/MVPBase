@@ -1,8 +1,6 @@
 package com.example.apple.mvpbase.mvp.screen_main;
 
-import com.example.apple.mvpbase.data.DataSource;
 import com.example.apple.mvpbase.data.Repository;
-import com.example.apple.mvpbase.mvp.model.User;
 
 public class MainPresenter implements MainContract.Presenter {
 
@@ -20,26 +18,4 @@ public class MainPresenter implements MainContract.Presenter {
         mView.setPresenter(this);
     }
 
-
-    @Override
-    public void login(
-            String email,
-            String password) {
-
-        mRepository.login(
-                email,
-                password,
-                new DataSource.LoginCallBack() {
-                    @Override
-                    public void success(User user) {
-                        mView.loginSuccess(user);
-                    }
-
-                    @Override
-                    public void failed(int errorCode, String msgError) {
-                        mView.loginFailed(errorCode, msgError);
-                    }
-                }
-        );
-    }
 }

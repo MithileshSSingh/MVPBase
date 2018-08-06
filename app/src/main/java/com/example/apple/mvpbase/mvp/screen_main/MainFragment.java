@@ -28,7 +28,7 @@ public class MainFragment extends BaseFragment implements MainContract.View {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.login, container, false);
+        mView = inflater.inflate(R.layout.fragment_main, container, false);
         setHasOptionsMenu(true);
         return super.onCreateView(inflater, container, savedInstanceState);
     }
@@ -69,21 +69,6 @@ public class MainFragment extends BaseFragment implements MainContract.View {
 
     @Override
     public void setPresenter(MainContract.Presenter presenter) {
-        mPresenter = presenter;
-    }
-
-    @Override
-    public void showLoading(String title, String message) {
-
-    }
-
-    @Override
-    public void loginSuccess(User user) {
-
-    }
-
-    @Override
-    public void loginFailed(int errorCode, String errorMessage) {
 
     }
 }

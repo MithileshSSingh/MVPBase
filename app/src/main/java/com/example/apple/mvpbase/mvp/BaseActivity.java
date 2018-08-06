@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 
 import com.example.apple.mvpbase.R;
-import com.example.apple.mvpbase.mvp.screen_login.LoginFragment;
 import com.example.apple.mvpbase.mvp.screen_main.MainFragment;
 import com.example.apple.mvpbase.utils.ActivityUtils;
 import com.example.apple.mvpbase.utils.AppConstants;
@@ -34,12 +33,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         boolean addToBackStack = false;
 
         switch (screenId) {
-            case AppConstants.Screens.SCREEN_LOGIN:
-
-                fragment = LoginFragment.newInstance();
-                tag = LoginFragment.TAG;
-
-                break;
             case AppConstants.Screens.SCREEN_MAIN:
 
                 fragment = MainFragment.newInstance();
@@ -51,10 +44,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
 
         if (fragment != null && tag != null) {
-            ActivityUtils.addFragmentToActivity(
-                    getSupportFragmentManager(),
-                    fragment, R.id.content,
-                    tag, addToBackStack);
+            ActivityUtils.addFragmentToActivity(getSupportFragmentManager(), fragment, R.id.content, tag, addToBackStack);
         }
     }
 
